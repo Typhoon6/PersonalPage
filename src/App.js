@@ -1,23 +1,39 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react';
+
+import { BrowserRouter as Router, Route , Routes} from "react-router-dom";
+import Page1 from './pages/page1'; 
+import Page2 from './pages/page2';
+import Page3 from './pages/page3';
+import HomePage from './pages/homepage';
+import PageSelector from './pages/pageselector';
+import PokemonPage from './pages/pokemon_test';
+import CellMLPage from './pages/cellml_page';
+import "./style/projectselector.css";
+
+//import Solver from './pages/Sudoku/Solver';
+
+
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<HomePage/>} />
+          <Route exact path="page1" element={<Page1 />} />
+          <Route exact path="page2" element={<Page2 />} />
+          <Route exact path="page3" element={<Page3 />} />
+          <Route exact path="pageselector" element={<PageSelector/>}/>
+          <Route exact path="pokemondb" element={<PokemonPage/>}/>
+          <Route exact path="cellml" element={<CellMLPage/>}/>
+          
+        </Routes>
+      
+      </Router>
     </div>
   );
 }

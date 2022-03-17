@@ -1,5 +1,61 @@
+/*
+  Imported Fonts
+*/
+@font-face {
+    font-family: 'DebugFont';
+    src: url('fonts/debug_font.woff'), 
+         url('fonts/debug_font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'WebsiteText';
+    src: url('fonts/GameBost\ Market.otf'), 
+         url('fonts/GameBost\ Market.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MarioFont';
+    src: url('fonts/mario_font.ttf'), 
+         url('fonts/mario_font.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MarioFont2';
+    src: url('fonts/Birdy\ Game.ttf'), 
+         url('fonts/Birdy\ Game.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SuperMarioFont';
+    src: url('fonts/super-mario-maker-extended.ttf'), 
+         url('fonts/super-mario-maker-extended.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PokemonFont';
+    src: url('fonts/AccordAlternate-Bold.woff'), 
+         url('fonts/AccordAlternate-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .App {
   text-align: center;
+}
+
+/* Remove padding of the body for more aesthetic design */
+html, body {
+  height:100%;
+  width: 100%;
+  margin:0;
+  padding:0;
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -18,8 +74,6 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -35,4 +89,221 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+#page_menu {
+  /*Menu starts at the top of the page*/
+  left: 50%;
+  right: 50%;
+  top: 65px;
+  background-color: rgb(65,65,65);
+  /*Font used in the header*/
+  font-family:'SuperMarioFont';
+  text-shadow: 2px 2px rgb(163, 133, 34);
+  font-size: 50px;
+  text-align: left;
+  /*Padding to move the text to a good position*/
+  padding-left: 60px;
+  padding-top: 5px;
+  border-radius: 5px;
+  border: 15px solid transparent;
+  border-image: url(images/mario_border.png) 50 round;
+  
+}
+
+#interactive_text {
+  width: 5000px;
+  line-height: 60px;
+  color: rgb(242, 202, 0);
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
+  font-size: 80px;
+}
+#interactive_small_text {
+  width: 500px;
+  word-break: normal;
+  font-size: 35px;
+  padding-top: 20px;
+  font-family:'SuperMarioFont';
+  text-shadow: 2px 2px rgb(7,10,10);
+}
+
+.parent {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between; /* Align Items Horizontally */
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background-image: url('./images/mario_home_background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#page_content {
+
+  width: 100%;
+  height: 100%;
+  font-family: 'MarioFont';
+  font-size: 65px;
+  
+  text-align: left;
+  margin-bottom: 180px;
+  padding-left: 80px;
+  padding-top: 40px;
+  overflow-x: hidden;
+}
+
+#interactive_start {
+  width: 300px;
+  height: 100px;
+  /*background-color: rgb(153,225,224);*/
+  border: none;
+  margin-left: 180px;
+  margin-top: 110px;
+  background-image: url(images/mario_blocks.png);
+  background-repeat: repeat;
+  background-size: contain;
+  font-family: 'MarioFont';
+  font-size: 55px;
+  color: rgb(242, 202, 0);
+  -webkit-text-stroke-width: 2.5px;
+  -webkit-text-stroke-color: black;  
+  overflow: hidden;
+}
+
+/* Hovering on the Start Button will shake the blocks to help indicate interactivity */
+#interactive_start:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(2px, 0, 0);
+  }
+}
+
+
+
+#interactive_text span {
+  position: relative;
+  display: inline-block;
+  text-shadow: 
+    0 1px 0 #CCC,
+    0 2px 0 #CCC,
+    0 3px 0 transparent,
+    0 4px 0 transparent,
+    0 5px 5px rgba(0, 0, 0, .4);
+}
+
+#interactive_text span:hover {animation: bounce 0.1s ease alternate;}
+
+
+@keyframes bounce {
+  0% { transform: rotate(0deg); }
+  80% { transform: rotate(0deg); }
+  85% { transform: rotate(20deg); }
+  95% { transform: rotate(-20deg); }
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 #CCC,
+                 0 2px 0 #CCC,
+                 0 3px 0 #CCC,
+                 0 4px 0 #CCC,
+                 0 5px 0 #CCC,
+                 0 6px 0 #CCC,
+                 0 7px 0 #CCC,
+                 0 8px 0 #CCC,
+                 0 9px 0 #CCC,
+                 0 50px 25px rgba(0, 0, 0, .2);
+    transform: rotate(0deg);
+  }
+}
+
+
+#start_pipe { 
+  position: fixed;
+  left: 1px;
+  bottom: 131px;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.coin {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  display: none;
+}
+#start_coin {
+  bottom: 440px;
+  left: 385px;
+}
+#start_coin_l {
+  bottom: 440px;
+  left: 285px;
+}
+#start_coin_r {
+  bottom: 440px;
+  left: 485px;
+}
+
+#mario_sprite {
+  position: fixed;
+  left: 20px;
+  bottom: 131px;
+  display: none;
+  width: 70px;
+  height: 120px;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  z-index: 3;
+}
+
+#end_stage_poles1 {
+  right: 80px;
+  bottom: 130px;
+  z-index: 2;
+}
+#end_stage_poles2 {
+  right: 10px;
+  bottom: 130px;
+  z-index: 4;
+}
+.endPoles {
+  position: fixed;
+  width: 50px;
+  height: 450px;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+
+#pkm_db_page {
+  background-image: url(./images/pkm/pkm_background_img.jpeg);
+  background-size: 1000px 1000px;
+  background-repeat: repeat ;
 }

@@ -1,0 +1,131 @@
+body {
+  font-family: arial, helvetica;
+}
+
+h3 {
+  font-size: 5em;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+}
+
+
+#fp-nav ul li:hover a.active span,
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li:hover a.active span,
+.fp-slidesNav ul li a.active span {
+  background-color: rgb(197, 50, 50);
+}
+
+#cellml_logo {
+	font-size: 84px;
+	font-family: 'PokemonFont';
+	color:rgb(51,51,51);
+	text-align: center;
+	border-bottom: 5px solid rgb(204,0,0);
+	width: max-content;
+	display: inline-block;
+}
+
+.cellmlred {
+	color: rgb(204,0,0);
+	font-size: 32px;
+	margin-top: 20px;
+}
+.cellmlblack {
+	color: black;
+}
+
+.cellml_box {
+	border: 4px solid red;
+	text-align: center;
+}
+#cellml_icon {
+	width: 300px;
+	height: 140px;
+}
+#btns_div {
+	margin-top: 20px;
+}
+#link_git {
+	background-image: url("https://clipground.com/images/github-logo-png-7.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+	padding-right: 20px;
+	font-size: 24px;
+	font-weight: bold;
+	color: rgb(43,65,77);
+	cursor: pointer;
+}
+
+#link_git:hover {
+	background-image: url("https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/github-icon-18-256.png");
+	
+	color: rgb(230,230,230);
+	background-color: rgb(43,65,77);
+	transition: all 0.4s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+}
+#link_git:after, #link_cell:after {
+	top: 50%;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border-radius: 50%;
+	mix-blend-mode: lighten;
+	transition: all 0.5s cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	
+}
+#link_git:hover:after, #link_cell:hover:after {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 0.25vw;
+}
+
+#link_cell {
+	font-size: 24px;
+	font-weight: bold;
+	background-color: rgb(43,65,77);
+	color: rgb(230,230,230);
+	cursor: pointer;
+}
+#link_cell:hover {
+	
+	color: rgb(43,65,77);
+	background-color: rgb(230,230,230);
+	transition: all 0.4s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+}
+
+
+
+.website_link {
+	width: 160px;
+	padding: 10px 0px 10px 0px;
+	margin: 5px;
+	border-radius: 7px;
+	font-size: 22px;
+}
+#git_logo {
+	position: relative;
+	height: 40px;
+}
+
+
+@keyframes bouncing {
+    0% {bottom: 0;}
+    50% {bottom: 10px;}
+    100% {bottom: 0;}
+}
+
+.arrow {
+    animation: bouncing 1s infinite ease-in-out;
+    bottom: 0px;
+    display: block;
+    height: 50px;
+    left: 50%;
+    margin-left: -25px;
+    position: absolute;
+    width: 50px;
+}
