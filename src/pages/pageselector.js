@@ -24,9 +24,9 @@ function PageSelector() {
 		  </div>
 		  <div id="container">
 			<a className="animated zoomInLeft box red" href="/pokemondb/">Pokémon Database</a>
-			<a className="animated zoomInRight box green" href="/cellml/">CellML Editor</a>
-			<a className="animated zoomInRight box green" href="/sudoku/">Sudoku Solver</a>
-			<a className="animated zoomInLeft box blue" href="/">Home</a>
+			<a className="animated zoomInRight box blue" href="/sudoku/">Sudoku</a>
+			<a className="animated zoomInLeft box green" href="/cellml/">CellML Editor</a>
+			<a className="animated zoomInRight box black" href="/">Home</a>
 		</div>
 	  </body>
 	

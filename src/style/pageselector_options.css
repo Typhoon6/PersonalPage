@@ -27,9 +27,10 @@ body {
 
 .box {
     display: block;
-    width: 250px;
+    width: 300px;
     padding: 15px 0 15px 0;
     margin: 5px auto;
+    margin-bottom: 7px;
     cursor: pointer;
     color: white;
 	border-color: red;
@@ -53,8 +54,12 @@ body {
 .red:hover    { background-color: #c25850; border-color: #813a35; ;}
 .green  { background-color: #1bcf69; }
 .green:hover  { background-color: #28a15c; border-color: #1b7241;}
+
 .blue   { background-color: #63a0d4; }
-.blue:hover   { background-color: #74B0E4; }
+.blue:hover   { background-color: #6090b9; }
+
+.black   { background-color: #282b2e; }
+.black:hover   { background-color: #202122; }
 
 #projects_header {
 

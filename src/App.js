@@ -12,9 +12,7 @@ import PokemonPage from './pages/pokemon_test';
 import CellMLPage from './pages/cellml_page';
 import "./style/projectselector.css";
 
-import Solver from './pages/Sudoku/Solver';
-
-
+import { SudokuGame } from './pages/Sudoku/SudokuGame';
 
 function App() {
 
@@ -30,7 +28,7 @@ function App() {
           <Route exact path="pageselector" element={<PageSelector/>}/>
           <Route exact path="pokemondb" element={<PokemonPage/>}/>
           <Route exact path="cellml" element={<CellMLPage/>}/>
-          <Route exact path="sudoku" element={<Solver/>}/>
+          <Route exact path="sudoku" element={<SudokuGame/>}/>
         </Routes>
       
       </Router>
