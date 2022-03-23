@@ -21,11 +21,11 @@ function App() {
       
       <Router>
         <Routes>
-          <Route exact path="/" element={<HomePage/>} />
+          <Route exact path="home" element={<HomePage/>} />
           <Route exact path="page1" element={<Page1 />} />
           <Route exact path="page2" element={<Page2 />} />
           <Route exact path="page3" element={<Page3 />} />
-          <Route exact path="pageselector" element={<PageSelector/>}/>
+          <Route exact path="/" element={<PageSelector/>}/>
           <Route exact path="pokemondb" element={<PokemonPage/>}/>
           <Route exact path="cellml" element={<CellMLPage/>}/>
           <Route exact path="sudoku" element={<SudokuGame/>}/>

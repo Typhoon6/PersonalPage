@@ -9,14 +9,6 @@ h3 {
   font-weight: 700;
 }
 
-
-#fp-nav ul li:hover a.active span,
-#fp-nav ul li a.active span,
-.fp-slidesNav ul li:hover a.active span,
-.fp-slidesNav ul li a.active span {
-  background-color: rgb(197, 50, 50);
-}
-
 #cellml_logo {
 	font-size: 84px;
 	font-family: 'PokemonFont';
@@ -40,10 +32,7 @@ h3 {
 	border: 4px solid red;
 	text-align: center;
 }
-#cellml_icon {
-	width: 300px;
-	height: 140px;
-}
+
 #btns_div {
 	margin-top: 20px;
 }
@@ -64,7 +53,7 @@ h3 {
 	
 	color: rgb(230,230,230);
 	background-color: rgb(43,65,77);
-	transition: all 0.4s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+	transition: all 0s cubic-bezier(0.250, 0.100, 0.250, 1.000);
 }
 #link_git:after, #link_cell:after {
 	top: 50%;
@@ -73,7 +62,7 @@ h3 {
 	height: 0;
 	border-radius: 50%;
 	mix-blend-mode: lighten;
-	transition: all 0.5s cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	transition: all 0.1s cubic-bezier(0.420, 0.000, 0.580, 1.000);
 	
 }
 #link_git:hover:after, #link_cell:hover:after {
@@ -93,9 +82,9 @@ h3 {
 }
 #link_cell:hover {
 	
-	color: rgb(43,65,77);
+	color: rgb(51,51,51);
 	background-color: rgb(230,230,230);
-	transition: all 0.4s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+	transition: all 0.1s cubic-bezier(0.250, 0.100, 0.250, 1.000);
 }
 
 
@@ -118,8 +107,8 @@ h3 {
     50% {bottom: 10px;}
     100% {bottom: 0;}
 }
-/*
-.arrow {
+
+.next_arrow {
     animation: bouncing 1s infinite ease-in-out;
     bottom: 0px;
     display: block;
@@ -128,4 +117,354 @@ h3 {
     margin-left: -25px;
     position: absolute;
     width: 50px;
-}*/
+}
+
+#cellml_header {
+	top: 50px;
+	text-align: center;
+	background-color: #fff;
+	padding-top: 5px;
+	min-height: 50px;
+}
+#cellml_icon {
+	height: 40px;
+	padding-top: 9px;
+	padding-bottom: 8px;
+}
+#cellml_icon:hover {
+	height: 50px;
+	padding-top: 3px;
+	padding-bottom: 4px;
+	cursor: pointer;
+}
+.cellml_icon_pos {
+	text-align: left;
+}
+.cellml_icon_pos:nth-child(1) {
+	padding-left: 30px;
+}
+
+
+
+
+
+.section {
+    position: relative;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+	margin: 0;
+}
+.section-cellml_circd {
+    position: relative;
+    overflow: hidden;
+}
+.section-cellml_circd .cellml_circ_style1.cellml_circ_primary {
+    background: linear-gradient(150deg,#da6969 15%,#e29595 70%,#e4e1e1 94%);
+}
+.section-cellml_circd .cellml_circ_primary {
+    background: linear-gradient(150deg,#281483 15%,#8f6ed5 70%,#d782d9 94%);
+}
+.section-cellml_circd .cellml_circ {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+.section-cellml_circd .cellml_circ_style1 :first-child {
+    left: -4%;
+    bottom: auto;
+    background: hsla(0,0%,100%,.1);
+}
+.section-cellml_circd .cellml_circ_style1 .span-150 {
+    height: 150px;
+    width: 150px;
+}
+.section-cellml_circd .cellml_circ_style1 span {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+.section-cellml_circd .cellml_circ_style1 :nth-child(2) {
+    right: 4%;
+    top: 10%;
+    background: hsla(0,0%,100%,.1);
+}
+.section-cellml_circd .cellml_circ_style1 .span-50 {
+    height: 50px;
+    width: 50px;
+}
+.section-cellml_circd .cellml_circ_primary :nth-child(2) {
+    background: hsla(0,0%,100%,.1);
+}
+.section-cellml_circd .cellml_circ_style1 :nth-child(3) {
+    top: 280px;
+    right: 5.66666%;
+    background: hsla(0,0%,100%,.3);
+}
+.section-cellml_circd .cellml_circ_style1 .span-50 {
+    height: 50px;
+    width: 50px;
+}
+.section-cellml_circd .cellml_circ_primary :nth-child(3) {
+    background: hsla(0,0%,100%,.1);
+}
+.section-cellml_circd .cellml_circ_style1 :nth-child(4) {
+    top: 320px;
+    right: 7%;
+    background: hsla(0,0%,100%,.15);
+}
+.section-cellml_circd .cellml_circ_style1 .span-75 {
+    height: 75px;
+    width: 75px;
+}
+.section-cellml_circd .cellml_circ_primary :nth-child(4) {
+    background: hsla(0,0%,100%,.3);
+}
+.section-cellml_circd .cellml_circ_style1 :nth-child(5) {
+    top: 38%;
+    left: 1%;
+    right: auto;
+    background: hsla(0,0%,100%,.05);
+}
+.section-cellml_circd .cellml_circ_style1 .span-100 {
+    height: 100px;
+    width: 100px;
+}
+.section-cellml_circd .cellml_circ_primary :nth-child(5) {
+    background: hsla(0,0%,100%,.25);
+}
+.section-cellml_circd .cellml_circ_style1 :nth-child(6) {
+    width: 200px;
+    height: 200px;
+    top: 44%;
+    left: 10%;
+    right: auto;
+    background: hsla(0,0%,100%,.15);
+}
+.section-cellml_circd .cellml_circ_style1 .span-75 {
+    height: 75px;
+    width: 75px;
+}
+.section-cellml_circd .cellml_circ_style1 span {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+.section-cellml_circd .cellml_circ_style1 :nth-child(7) {
+    bottom: 50%;
+    right: 36%;
+    background: hsla(0,0%,100%,.1);
+}
+.section-cellml_circd .cellml_circ_style1 .span-50 {
+    height: 50px;
+    width: 50px;
+}
+.section-cellml_circd .cellml_circ_style1 span {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+.section-cellml_circd .cellml_circ_style1 :nth-child(8) {
+    bottom: 70px;
+    right: 2%;
+    background: hsla(0,0%,100%,.2);
+}
+.section-cellml_circd .cellml_circ_style1 .span-100 {
+    height: 100px;
+    width: 100px;
+}
+.section-cellml_circd .cellml_circ_style1 span {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+.section-cellml_circd .cellml_circ_style1 :nth-child(9) {
+    bottom: 1%;
+    right: 2%;
+    background: hsla(0,0%,100%,.1);
+}
+.section-cellml_circd .cellml_circ_style1 .span-50 {
+    height: 50px;
+    width: 50px;
+}
+.section-cellml_circd .cellml_circ_style1 span {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+.section-cellml_circd .cellml_circ_style1 :nth-child(10) {
+    bottom: 1%;
+    left: 1%;
+    right: auto;
+    background: hsla(0,0%,100%,.05);
+}
+.section-cellml_circd .cellml_circ_style1 .span-100 {
+    height: 100px;
+    width: 100px;
+}
+.section-cellml_circd .cellml_circ_style1 span {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.fill-white {
+    fill: #fff;
+}
+
+.section-cellml_circd .cellml_circ span {
+    position: absolute;
+}
+
+.cellml_separator {
+	bottom: 0;
+  position: absolute;
+	background-color: transparent;
+	width: 100%;
+	margin-bottom: -6px;
+}
+
+@media (max-width: 991.98px) {
+	.cellml_cellml_cellml_separator-skew {
+    z-index: 0;
+}
+}
+
+@media (min-width: 768px) {
+	.section-hero {
+    min-height: 500px;
+}
+}
+
+@media (min-width: 1200px) {
+	.cellml_page_header {
+    max-width: 1040px;
+	}
+}
+@media (min-width: 992px){
+.container {
+    max-width: 960px;
+}}
+@media (min-width: 768px)
+{.container {
+    max-width: 720px;
+}}
+@media (min-width: 576px)
+{.container {
+    max-width: 540px;
+}
+}
+
+.cellml_page_header {
+	
+	height: 450px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+.cellml_page_inner {
+	width: 80%;
+	vertical-align: middle;
+	color: rgb(51,51,51);
+	font-family: 'PokemonFont';
+	font-size: 24px;
+}
+
+#cellml_middle_text {
+	margin: 0;
+	padding: 0;
+	margin-top: 20px;
+	margin-bottom: 35px;
+}
+
+
+.cellml_links {
+	text-decoration: none;
+	color: rgba(0,0,0,.5);
+
+	font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0;
+	margin-left: 70px;
+	height: 100%;
+	position: relative;
+	padding: none;
+	margin: 0;
+	text-align: center;
+	text-transform:capitalize;	
+	bottom: 22px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.extra_left_pad {
+	margin-left: 60px;
+}
+
+.underline{
+  position: relative;
+}
+
+.cellml_links:hover {
+	color: rgb(204,0,0);
+	font-size: 1.1rem;
+}
+
+.underline::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(204,0,0);
+  
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+@media (hover: hover) and (pointer: fine) {
+  .underline:hover::before{
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+
+
+.cellml_section {
+	height: 300px;
+	background-color: #fff;
+}
+
+.cellml_project_scope {
+	border: 1px solid red;
+}
+
+
+.cellml_project_problems {
+	margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid red;
+    width: 90%;
+}
+
+.problem_circle {
+    border-radius: 50%;
+     width: 75px;
+  height: 75px;
+  background: #4bc475;
+  border: 3px solid #000;
+  display:inline-block;
+  margin-right: 10px;
+
+}
+.problem_text {
+    display:inline-block;
+    vertical-align: middle;
+}
+
+.temp_padding {
+    height: 275px;
+    background-color: white;
+
+}

@@ -6,6 +6,7 @@ import "../style/projectselector.css";
 import '../style/pokemonpage.css';
 import maginfy_glass from '../images/pkm/pkm_search.png';
 import all_pkm_array from './all_pkm.txt';
+import { Link } from "react-router-dom";
 
 function PokemonPage() {
 
@@ -1949,9 +1950,13 @@ function PokemonPage() {
       <div id="pkm_db_background">
         
         <div id="pkm_page_header">
-          <img className="pkball_logo" src="https://2.bp.blogspot.com/-nnriC7RO7dM/VOuR_46Eb_I/AAAAAAAAAVs/u5J-XjN79SY/s1600/Pokeball.png" alt="pokeball logo"/>
+          <div className='inner_pkm'>
+      <img className="pkball_logo" src="https://2.bp.blogspot.com/-nnriC7RO7dM/VOuR_46Eb_I/AAAAAAAAAVs/u5J-XjN79SY/s1600/Pokeball.png" alt="pokeball logo"/>
           <span> Pokémon Database </span>
           <img className="pkball_logo" src="https://2.bp.blogspot.com/-nnriC7RO7dM/VOuR_46Eb_I/AAAAAAAAAVs/u5J-XjN79SY/s1600/Pokeball.png" alt="pokeball logo"/>
+          <Link to="/"><button className="home_button pkm_home_btn" ></button></Link>
+          </div>
+          
         </div>
 
         <div id="pkm_search_bar">
@@ -1966,8 +1971,8 @@ function PokemonPage() {
             <option value="100">100</option>
           </select>
         </div>
-
-        <div> {/* Just some test functions*/}
+{/* Just some test functions*/}
+       {/* <div> 
           <button onClick={test}>
             Test
           </button>
@@ -1980,7 +1985,7 @@ function PokemonPage() {
           <button onClick={showFile}>
             Test 4
           </button>
-        </div>
+        </div>*/}
 
           {/* Modal for the pokemon */}
           <div id="pkm_modal" className="full_pkm_info_modal" onClick={close_modal}>

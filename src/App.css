@@ -307,3 +307,64 @@ html, body {
   background-size: 1000px 1000px;
   background-repeat: repeat ;
 }
+
+
+  #interactive_notice_board {
+    position: absolute;
+    right: 200px;
+    width: 350px;
+    border: 1px solid #342c28;
+    border-radius: 10px;
+    background-color: rgb(65,65,65);
+    background-size: contain;
+    
+  }
+  .notice_board_title {
+    color: rgb(242, 202, 0);
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    background-image: url(./images/mario_blocks.png);
+    background-size:contain;
+    background-repeat: repeat-x;
+    border-radius: 10px;
+    font-size: 38px;
+    text-align: center;
+  }
+  .notice_board_text {
+    font-size: 20px;
+    font-family: 'PokemonFont';
+    text-align: center;
+  }
+
+  .home_button {
+    background-image: url("https://www.indiaretailing.com/wp-content/uploads/2016/02/Home-Button.png");
+    background-size: contain;
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+    position:absolute;
+    right: 25px;
+    top: 25px;
+  }
+  .gold_home {
+    background-color: rgb(36, 36, 36)
+  }
+  .sudoku_home_btn {
+    right: 25px;
+    top: 25px;
+    background-color: rgb(66, 90, 168);
+    height: 55px;
+    width: 55px;
+    border-radius: 50px;
+  }
+  .pkm_home_btn {
+    right: 25px;
+    top: 5px;
+    background-color: rgb(190, 49, 49);
+    height: 55px;
+    width: 55px;
+    border-radius: 50px;
+  }
+  .inner_pkm {
+  position: relative; height: auto;
+}

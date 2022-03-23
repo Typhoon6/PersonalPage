@@ -59,6 +59,7 @@ function HomePage() {
     // mario jumps and runs to the right
     document.getElementById("mario_sprite").style.display = "block";
     run_mario_animation();
+
   }
 
   const run_mario_animation = () => {
@@ -197,6 +198,8 @@ function HomePage() {
 
         <div id="page_menu">
           DAVID LEYDON
+          <Link to="/"><button className="home_button gold_home" ></button></Link>
+          
         </div>
         <div id="page_content">
           <div id="interactive_text">
@@ -222,11 +225,15 @@ function HomePage() {
           <div id="interactive_small_text">
             The website is an interactive application, displaying both my portfolio & some skills I've learned along the way.
           </div>
-          <Link to="pageselector">
+          <div id="interactive_notice_board">
+            <div className='notice_board_title'>Notice</div>
+            <div className='notice_board_text'>This is early development of my future home page with the intention to be more interactive and responsive</div>
+          </div>
+
           <button id="interactive_start" onClick={start_game}>
             Play
           </button>
-          </Link>
+
           
 
         </div>
