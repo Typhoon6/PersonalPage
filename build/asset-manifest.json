@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/PersonalPage/static/css/main.66e821f3.css",
+    "main.js": "/PersonalPage/static/js/main.1ed18629.js",
+    "static/media/mario_blocks.png": "/PersonalPage/static/media/mario_blocks.9115a3cd141f9f1b094d.png",
+    "static/media/mario_border.png": "/PersonalPage/static/media/mario_border.1b050db5f5b90bd4297a.png",
+    "static/media/mario_block_empty2.png": "/PersonalPage/static/media/mario_block_empty2.5625fd6357a523599241.png",
+    "static/media/pkm_background_img.jpeg": "/PersonalPage/static/media/pkm_background_img.c3ac2445d89dbbd00fe8.jpeg",
+    "static/media/mario_home_background.png": "/PersonalPage/static/media/mario_home_background.b42dcd60154649a7fce5.png",
+    "static/media/Birdy Game.ttf": "/PersonalPage/static/media/Birdy Game.58b673b58cf1b8399631.ttf",
+    "static/media/super-mario-maker-extended.ttf": "/PersonalPage/static/media/super-mario-maker-extended.323071bea120edcd770f.ttf",
+    "static/media/GameBost Market.otf": "/PersonalPage/static/media/GameBost Market.d0e8e6b15dfeef6973d9.otf",
+    "static/media/dropuparrow.png": "/PersonalPage/static/media/dropuparrow.97a55c61733d36881356.png",
+    "static/media/dropdownarrow.jpg": "/PersonalPage/static/media/dropdownarrow.94b02da72168151a185d.jpg",
+    "static/media/all_pkm.txt": "/PersonalPage/static/media/all_pkm.cd8953fd257e1ba46123.txt",
+    "static/media/AccordAlternate-Bold.woff": "/PersonalPage/static/media/AccordAlternate-Bold.8af49f96337844168b9c.woff",
+    "static/media/mario_font.ttf": "/PersonalPage/static/media/mario_font.47adb543d2f1f8bf3499.ttf",
+    "static/media/debug_font.woff": "/PersonalPage/static/media/debug_font.e1087c63aae447cd4511.woff",
+    "static/media/mario_ground.png": "/PersonalPage/static/media/mario_ground.6cab332b8365ed0781c9.png",
+    "static/media/logo.svg": "/PersonalPage/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/PersonalPage/index.html",
+    "main.66e821f3.css.map": "/PersonalPage/static/css/main.66e821f3.css.map",
+    "main.1ed18629.js.map": "/PersonalPage/static/js/main.1ed18629.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.66e821f3.css",
+    "static/js/main.1ed18629.js"
+  ]
+}
