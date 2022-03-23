@@ -14,12 +14,14 @@ import "./style/projectselector.css";
 
 import { SudokuGame } from './pages/Sudoku/SudokuGame';
 
+
 function App() {
 
   return (
     <div className="App">
       
-      <Router>
+      {/* Need to change to single page applciation */}
+      {/*<Router>
         <Routes>
           <Route exact path="home" element={<HomePage/>} />
           <Route exact path="page1" element={<Page1 />} />
@@ -30,8 +32,12 @@ function App() {
           <Route exact path="cellml" element={<CellMLPage/>}/>
           <Route exact path="sudoku" element={<SudokuGame/>}/>
         </Routes>
-      
-      </Router>
+      </Router>*/}
+      <PageSelector/>
+      <HomePage/>
+      <PokemonPage/>
+      <SudokuGame/>
+      <CellMLPage/>
     </div>
   );
 }

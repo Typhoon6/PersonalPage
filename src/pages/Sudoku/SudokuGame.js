@@ -8,7 +8,7 @@ import { Header } from './components/Header';
 
 export function SudokuGame() {
   return (
-    <div className='sudoku_wrapper'>
+    <div id="SUDOKUGAME" className='sudoku_wrapper'>
       <Header/>
       <SudokuProvider>
         <Game />

@@ -368,3 +368,13 @@ html, body {
   .inner_pkm {
   position: relative; height: auto;
 }
+
+
+
+
+#HOMEPAGE, #PKMDBPAGE, #CELLMLPAGE, #SUDOKUGAME  {
+  display: none;
+}
+ #PAGESELECTOR{
+  display: block;
+}

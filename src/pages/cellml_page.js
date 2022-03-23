@@ -89,15 +89,28 @@ function CellMLPage () {
     window.open(url, '_blank');
   }
   
+  const change_page = (id) => {
+    document.getElementById("PAGESELECTOR").style.display = "none";
+    document.getElementById("HOMEPAGE").style.display = "none";
+    document.getElementById("CELLMLPAGE").style.display = "none";
+    document.getElementById("SUDOKUGAME").style.display = "none";
+    document.getElementById("PKMDBPAGE").style.display = "none";
+    document.getElementById(id).style.display = "block";
+  }
+  
   return (
-    <div className='cellml_page'>
+    <div id="CELLMLPAGE" className='cellml_page'>
       <div id="cellml_header">
         <div className='cellml_icon_pos'>
           <img id="cellml_icon" src={cellml_logo} alt="cellml logo"/>
-          <Link className='cellml_links underline extra_left_pad' to="/cellml/">Home</Link>
+          {/*<Link className='cellml_links underline extra_left_pad' to="/cellml/">Home</Link>
           <Link className='cellml_links underline' to="/pokemondb/">Pokémon DB</Link>
           <Link className='cellml_links underline' to="/sudoku/">Sudoku</Link>
-          <Link className='cellml_links underline' to="/">Projects</Link>
+          <Link className='cellml_links underline' to="/">Projects</Link>*/}
+          <button className='cellml_links underline extra_left_pad' onClick={() => change_page("HOMEPAGE")}>Home</button>
+          <button className='cellml_links underline' onClick={() => change_page("PKMDBPAGE")}>Pokémon DB</button>
+          <button className='cellml_links underline' onClick={() => change_page("SUDOKUGAME")}>Sudoku</button>
+          <button className='cellml_links underline' onClick={() => change_page("PAGESELECTOR")}>Projects</button>
         </div>
         
       </div>  

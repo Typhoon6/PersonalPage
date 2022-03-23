@@ -191,15 +191,20 @@ function HomePage() {
     document.getElementsByClassName("parent")[1].style.display = "block";
   }
 
+  const change_page = () => {
+    document.getElementById("PAGESELECTOR").style.display = "block";
+    document.getElementById("HOMEPAGE").style.display = "none";
+  }
+
   return (
-    <div className="App">
+    <div id="HOMEPAGE" className="App">
 
       <div className="parent">
 
         <div id="page_menu">
           DAVID LEYDON
-          <Link to="/"><button className="home_button gold_home" ></button></Link>
-          
+          {/*<Link to="/"><button className="home_button gold_home" ></button></Link>*/}
+          <button className="home_button gold_home" onClick={change_page}></button>
         </div>
         <div id="page_content">
           <div id="interactive_text">

@@ -1946,15 +1946,24 @@ function PokemonPage() {
     // =======================================================================
     // =======================================================================
 
+    const change_page = () => {
+      document.getElementById("PAGESELECTOR").style.display = "block";
+      document.getElementById("PKMDBPAGE").style.display = "none";
+    }
+
     return (
+      <div id="PKMDBPAGE">
+
+      
       <div id="pkm_db_background">
         
         <div id="pkm_page_header">
           <div className='inner_pkm'>
-      <img className="pkball_logo" src="https://2.bp.blogspot.com/-nnriC7RO7dM/VOuR_46Eb_I/AAAAAAAAAVs/u5J-XjN79SY/s1600/Pokeball.png" alt="pokeball logo"/>
+          <img className="pkball_logo" src="https://2.bp.blogspot.com/-nnriC7RO7dM/VOuR_46Eb_I/AAAAAAAAAVs/u5J-XjN79SY/s1600/Pokeball.png" alt="pokeball logo"/>
           <span> Pokémon Database </span>
           <img className="pkball_logo" src="https://2.bp.blogspot.com/-nnriC7RO7dM/VOuR_46Eb_I/AAAAAAAAAVs/u5J-XjN79SY/s1600/Pokeball.png" alt="pokeball logo"/>
-          <Link to="/"><button className="home_button pkm_home_btn" ></button></Link>
+          {/*<Link to="/"><button className="home_button pkm_home_btn" ></button></Link>*/}
+          <button className="home_button pkm_home_btn" onClick={change_page} ></button>
           </div>
           
         </div>
@@ -2533,6 +2542,7 @@ function PokemonPage() {
             <div id="right_arrow" className='arrow pagination rightarrow' >&raquo;</div>
           </div>
           
+      </div>
       </div>
     );
 }
